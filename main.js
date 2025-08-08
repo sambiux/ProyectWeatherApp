@@ -19,7 +19,7 @@ btn.addEventListener("click", (event) => {
         alert("Ingrese el nombre de una ciudad valida")
         throw new Error("Error al encontar la ciudad");
       }
-      console.log(response.json())
+      return response.json();
     })
     .then(data => {
       console.log("Resultado de la búsqueda:", data);
@@ -54,6 +54,7 @@ function infoClima2(ciudad, data){
         window.location.href= "index.html";
       });
 }
+
 
 
 
